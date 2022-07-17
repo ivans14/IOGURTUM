@@ -1,0 +1,15 @@
+.background_purple{
+    background-color: #B287E8 ;
+    height: 100vh;
+    overflow: hidden;
+}
+.background_green{
+    background-color: #B7E3B7 ;
+    height: 200vh;
+    width: 150vw;
+    border-radius: 50%;
+    border-bottom-right-radius: cubic-bezier(.5,1.01,0,.01);
+    position: absolute;
+    top: -110vh;
+    left: -80vw;
+}
