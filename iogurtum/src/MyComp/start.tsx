@@ -31,7 +31,7 @@ export default function StartMenu() {
           <img src={logo} className="Logo"/>
         </div>
         <div className='separation'/>
-        <div className='container_buttons'>
+        {/* <div className='container_buttons'>
           <div className='inicio_div'>
             <div className='inicio'>Inicio</div>
           </div>
@@ -45,7 +45,7 @@ export default function StartMenu() {
             <div className='contact'>Contacto</div>
           </div>
 
-        </div>
+        </div> */}
         <div className='coffee_div'>
           <img src={coffee} className="coffee"/>
         </div>
