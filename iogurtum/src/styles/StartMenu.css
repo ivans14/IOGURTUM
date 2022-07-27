@@ -136,39 +136,104 @@
     background-color: #E5AAAA;
     border-radius: 18px;
     box-shadow: rgb(154, 12, 36) 0px 5px;
+    transition: all 0.3s;
+    justify-content: center;
+    display: flex;
+
+}
+.banner2{
+    position: absolute;
+    bottom: 5vh;
+    left: 25vw;
+    height: 25vh;
+    width: 10vw;
+    background-color: #e7cb98;
+    border-radius: 18px;
+    box-shadow: #e3af4e 0px 5px;
+    transition: all 0.3s;
+    justify-content: center;
+    display: flex;
 }
 
-/* .banner:hover{
+.banner:hover{
     box-shadow: rgb(154, 12, 36) 0px 15px;
     height: 26vh;
     width: 10.5%;
     left: 9.75vw;
+    bottom: 4.5vh;
     cursor: pointer;
-} */
+}
+.banner2:hover{
+    box-shadow: #e3af4e 0px 15px;
+    height: 26vh;
+    width: 10.5%;
+    left: 24.75vw;
+    bottom: 4.5vh;
+    cursor: pointer;
+}
+
 
 
 .banner_text {
-    bottom: 75%;
+    top: 40%;
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    overflow: visible;
+    transition: all 0.3s;
+    height: fit-content;
+}
+
+.banner_text_hover {
+    top: 40%;
     position: relative;
     text-align: center;
     display: block;
-    font-size: 4vh;
+    font-size: 4.15vh;
     overflow: visible;
+    transition: all 0.3s;
+
+
 }
 .yogur2{
     width: 10vw;
     object-fit: contain;
     min-width: 1vw;
+    transition: width 0.3s;
+
+
 }
-.banner:hover .yogur2 {
-    width: 14vw !important;
+
+.yogur2_hover{
+    width: 10.75vw;
+    object-fit: contain;
+    min-width: 1vw;
+    transition: width 0.3s;
+
 }
 
 .yogur2_div{
-    position: relative;
-    bottom: 17vh;
-    transform: rotateX(10deg);
+    position: absolute;
     display: flex;
-    justify-content: center;
+    bottom: 17.5vh;
+}
 
+.bocata{
+    width: 12vw;
+    object-fit: contain;
+    min-width: 1vw;
+    transition: width 0.3s;
+}
+
+.bocata_hover{
+    width: 12.75vw;
+    object-fit: contain;
+    min-width: 1vw;
+    transition: width 0.3s;
+
+}
+.bocata_div{
+    position: absolute;
+    display: flex;
+    bottom: 12.5vh;
 }
