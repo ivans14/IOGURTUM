@@ -1,14 +1,27 @@
 import '../styles/StartMenu.css';
 import * as React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <div className='container_buttons'>
       <div className='inicio_div'>
-        <div className='inicio'>Inicio</div>
+        <ul>
+          <li>
+            <Link to='/'>
+              <div className='inicio'>Inicio</div>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className='inicio_div'>
-        <div className='inicio'>Información</div>
+        <ul>
+          <li>
+            <Link to='/info'>
+              <div className='inicio'>Información</div>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className='inicio_div'>
         <div className='inicio'>Productos</div>
@@ -16,7 +29,6 @@ export default function Navbar() {
       <div className='inicio_div'>
         <div className='contact'>Contacto</div>
       </div>
-
     </div>
   );
 }
