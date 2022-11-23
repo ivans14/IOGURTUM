@@ -5,6 +5,8 @@ import yogur from '../assets/yogur.png';
 import coffee from '../assets/coffee.png';
 import yogur2 from '../assets/yogur2.png';
 import bocata from '../assets/bocata.png';
+import {useTheme} from '@mui/material';
+import {tokens} from './theme.tsx';
 
 export default function StartMenu() {
   const [hover, sethover] = React.useState(false);
@@ -21,9 +23,15 @@ export default function StartMenu() {
   const outside2 = () => {
     sethover2(false);
   };
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  // const colorMode = useContext(colorModeContext);
   return (
     <div>
-      <div className='start_menu'></div>
+      <div
+        style={{backgroundColor: colors.purple[900]}}
+        className='start_menu'
+      ></div>
       <div className='container'>
         <div className='logo_div'>
           <img src={logo} className='Logo' />

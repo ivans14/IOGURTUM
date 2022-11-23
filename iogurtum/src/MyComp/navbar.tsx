@@ -1,8 +1,12 @@
 import '../styles/StartMenu.css';
 import * as React from 'react';
 import {Link} from 'react-router-dom';
+import {useTheme} from '@mui/material';
+import {tokens} from './theme.tsx';
 
 export default function Navbar() {
+  const theme = useTheme();
+  // const colors = tokens(theme.palette.mode);
   return (
     <div className='container_buttons'>
       <div className='inicio_div'>
