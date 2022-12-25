@@ -1,12 +1,23 @@
 /* eslint-disable no-unused-vars */
-import React, {useContext} from 'react';
 import {createContext, useState, useMemo} from 'react';
 import {createTheme} from '@mui/material/styles';
 
 export const tokens = (mode) => ({
   ...(mode == 'dark'
     ? {
-        purple: {
+      grey: {
+        100: '#e0e0e0',
+        200: '#c2c2c2',
+        300: '#a3a3a3',
+        400: '#858585',
+        500: '#666666',
+        600: '#525252',
+        700: '#3d3d3d',
+        800: '#292929',
+        900: '#141414',
+      },
+
+      purple: {
           100: '#e6d9f6',
           200: '#cdb3ed',
           300: '#b48ee4',
@@ -31,6 +42,17 @@ export const tokens = (mode) => ({
         },
       }
     : {
+      grey: {
+        100: '#141414',
+        200: '#292929',
+        300: '#3d3d3d',
+        400: '#525252',
+        500: '#666666',
+        600: '#858585',
+        700: '#a3a3a3',
+        800: '#c2c2c2',
+        900: '#e0e0e0',
+      },
         purple: {
           100: '#1a0d2a',
           200: '#341a54',
@@ -70,8 +92,12 @@ export const themeSettings = (mode) => {
             secondary: {
               main: colors.purple[300],
             },
+            neutral: {
+              light: colors.grey[100],
+            },
             background: {
               default: colors.purple[800],
+              green: colors.green[800],
             },
           }
         : {
@@ -81,8 +107,12 @@ export const themeSettings = (mode) => {
             secondary: {
               main: colors.purple[500],
             },
+            neutral: {
+              dark: colors.grey[900],
+            },
             background: {
               default: colors.purple[800],
+              green: colors.green[800],
             },
           }),
     },
@@ -94,7 +124,7 @@ export const colorModeContext = createContext({
 });
 
 export const useMode = () => {
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState('light');
 
   const colorMode = useMemo(
     () => ({

@@ -27,5 +27,6 @@ module.exports = {
     // "no-multi-spaces": ["error"],
     'require-jsdoc': 'off',
     'linebreak-style': 0,
+    'no-unused-vars': 0,
   },
 };

@@ -1,12 +1,13 @@
 import * as React from 'react';
-import '../styles/StartMenu.css';
-import logo from '../assets/logo.png';
-import yogur from '../assets/yogur.png';
-import coffee from '../assets/coffee.png';
-import yogur2 from '../assets/yogur2.png';
-import bocata from '../assets/bocata.png';
-import {useTheme} from '@mui/material';
-import {tokens} from './theme.tsx';
+import './StartMenu.css';
+import logo from '../../assets/logo.png';
+import yogur from '../../assets/yogur.png';
+import coffee from '../../assets/coffee.png';
+import yogur2 from '../../assets/yogur2.png';
+import bocata from '../../assets/bocata.png';
+import {useTheme, Box} from '@mui/material';
+import {tokens} from '../theme.tsx';
+import Products from '../productos/Productos.tsx';
 
 export default function StartMenu() {
   const [hover, sethover] = React.useState(false);
@@ -28,28 +29,29 @@ export default function StartMenu() {
   // const colorMode = useContext(colorModeContext);
   return (
     <div>
-      <div
+      {/* <div
         style={{backgroundColor: colors.purple[900]}}
         className='start_menu'
-      ></div>
-      <div className='container'>
-        <div className='logo_div'>
+      ></div> */}
+      {/* <div className='container_logo'>
           <img src={logo} className='Logo' />
-        </div>
-        <div className='coffee_div'>
-          <img src={coffee} className='coffee' />
-        </div>
-        <div className='yogur_div'>
-          <img src={yogur} className='Yogur' />
-        </div>
-      </div>
+      </div> */}
+      <Box className='background_purple'
+        onMouseEnter={() => inside2()}
+        onMouseLeave={() => outside2()}>
+      </Box>
+      <Box className={!hover? 'background_green' : 'background_green_hover'}
+        onMouseEnter={() => inside()}
+        onMouseLeave={() => outside()}
+        style={{backgroundColor: colors.green[900]}}>
+      </Box>
       <div
         className='banner'
         onMouseEnter={() => inside()}
         onMouseLeave={() => outside()}
       >
         <div className='yogur2_div'>
-          <img src={yogur2} className={!hover ? 'yogur2' : 'yogur2_hover'} />
+          <img src={yogur} className={!hover ? 'yogur2' : 'yogur2_hover'} />
         </div>
         <div className={!hover ? 'banner_text' : 'banner_text_hover'}>
           Yogur helado
@@ -67,6 +69,7 @@ export default function StartMenu() {
           Bar y cafetería
         </div>
       </div>
+        <Products/>
     </div>
   );
 }

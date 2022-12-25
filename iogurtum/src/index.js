@@ -12,7 +12,8 @@ root.render(
     <App />
   </React.StrictMode>,
 );
-document.body.style.overflow = 'hidden';
+document.body.style.overflow = 'scroll';
+document.body.style.overflowX = 'hidden';
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
