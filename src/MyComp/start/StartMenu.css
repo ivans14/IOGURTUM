@@ -38,10 +38,21 @@
 }
 
 
-
-
-
 .banner {
+  position: absolute;
+  top: 25vh;
+  left: 0vw;
+  height: 60vh;
+  width: 40vw;
+  /* background-color: #e7cb98; */
+  /* box-shadow: #e3af4e 0px 5px; */
+  transition: all 0.3s;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.banner_hover {
   position: absolute;
   top: 25vh;
   left: 0vw;
@@ -250,6 +261,18 @@
   position: absolute;
   top: 10vh;
   left: 30vw;
+  height: 35vh;
+  width: 40vw;
+  transition: all 0.3s;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.banner_hover {
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
   height: 40vh;
   width: 40vw;
   transition: all 0.3s;
@@ -294,13 +317,15 @@
 }
 
 .banner_text {
-  font-size: 0;
+  font-size: 4.15vh;
   top: 40%;
   text-align: center;
   overflow: visible;
-  transition: all 0.3s;
+  transition: none;
+  height: -moz-fit-content;
   height: fit-content;
-  flex: 0;
+  color: transparent;
+  flex: 0 1;
 }
 
 .banner_text_hover {
@@ -309,7 +334,7 @@
   display: block;
   font-size: 4.15vh;
   overflow: visible;
-  transition: all 0.3s;
+  transition: none;
   flex: 1;
 }
 
@@ -317,9 +342,9 @@
 .banner_text_skew_hover {
   text-align: center;
   font-size: 4.15vh;
-  transition: all 0.3s;
+  transition: none;
   transform: skewY(-20deg);
-  flex: 1;
+  flex: 1 1;
 }
 .yogur2 {
   width: 13vw;

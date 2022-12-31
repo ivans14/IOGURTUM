@@ -46,7 +46,8 @@ export default function StartMenu() {
       </Box>
       <div>
         <div
-          className='banner'
+          className={hover? 'banner_hover' :
+          'banner'}
           onMouseEnter={() => inside()}
           onMouseLeave={() => outside()}
         >

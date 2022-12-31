@@ -69,7 +69,10 @@ export default function Drawer() {
             open={open}
             onClose={toggleDrawer}
             onOpen={toggleDrawer}
-            color={colors.purple[700]}
+            PaperProps={{sx: {
+                backgroundColor: colors.purple[900],
+                width: '60%',
+            }}}
         >
             {list()}
         </SwipeableDrawer>
