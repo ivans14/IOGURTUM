@@ -1,0 +1,36 @@
+.drawer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+.drawer_icon{
+    padding-right: 10%;
+    width: 10vw !important;
+    height: 50% !important;
+}
+.logo{
+    object-fit: contain;
+    height: 100%;
+    flex: 5;
+    justify-content: center;
+    display: flex;
+}
+.image{
+    object-fit: contain;
+    width: 35vw;
+
+}
+.false{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    flex:2;
+    padding: 0 !important;
+
+}

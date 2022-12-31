@@ -1,0 +1,105 @@
+.container_buttons {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    display: flex;
+    animation: 0.8s cubic-bezier(0.23, 0.55, 0.49, 0.83) 0s 1 slide_left;
+    justify-content: space-around;
+    padding: 0 40px;
+    height: 8%;
+  }
+  
+  .inicio_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .inicio {
+    font-weight: normal;
+    cursor: none;
+    height: fit-content;
+  }
+  
+  .contact {
+    color: #00c301;
+    font-weight: normal;
+    cursor: none;
+    height: fit-content;
+    padding-top: 35px;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+  
+  .inicio:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: solid 4px #00c301;
+    border-image: linear-gradient(to right, #00c301 20%, #ffffff 40%) 1;
+  }
+  .contact:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: solid 4px #8242d2;
+    border-image: linear-gradient(to right, #8242d2 20%, #ffffff 40%) 1;
+  }
+  
+  .theme_button{
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2vw;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+.Logo {
+    object-fit: contain;
+    animation: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 slide_top;
+    overflow: visible;
+  }
+  .Logo:hover {
+    cursor: pointer;
+  }
+  .container_logo {
+    display: flex;
+    top: 2%;
+    left: 2%;
+    height: 140%;
+    width: 99vw;
+    background-color: transparent;
+    justify-content: center;
+    flex:3;
+    margin: 0px 50px;
+  }
+
+  #menu li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: outside none none;
+    padding-inline-start: 0;
+    margin: 0;
+  }
+  
+  

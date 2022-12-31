@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import '../start/StartMenu.css';
+import './navbar.css';
 import * as React from 'react';
 import {Link} from 'react-router-dom';
 import {useTheme, Box, IconButton} from '@mui/material';
